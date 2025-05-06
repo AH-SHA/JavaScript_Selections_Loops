@@ -4,7 +4,7 @@ console.log("Hello World!\n==========\n");
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
 
-for(let i = 1; i < 100; i+2) 
+for(let i = 1; i < 100; i+=2) 
 {
     console.log(i);
 }
@@ -26,22 +26,17 @@ for(let i = 0; i < 100; i++)
 {
     if (i % 15 == 0)
     {
-    console.log(i, "FIZZBUZZ");
+        console.log(i, "FIZZBUZZ");
     }
-    else
+    else if (i % 5 == 0)    
     {
-
-        if (i % 5 == 0)
-        {
-
-            console.log(i, "BUZZ");
-        }
-
-        if (i % 3 == 0)
-        {
-            console.log(i, "FIZZ");
-        }
+        console.log(i, "BUZZ");
     }
+    else if (i % 3 == 0)
+    {
+        console.log(i, "FIZZ");
+    }
+    
 
 
 
@@ -64,14 +59,13 @@ do
         console.log(x, "FIZZBUZZ");
     }
 
-
-    if (x % 5 == 0)
+    else if (x % 5 == 0)
     {
 
         console.log(x, "BUZZ");
     }
 
-    if (x % 3 == 0)
+    else if (x % 3 == 0)
     {
         console.log(x, "FIZZ");
 }
@@ -97,18 +91,18 @@ while (i <= 100)
     }
 
 
-    if (i % 5 == 0)
+    elseif (i % 5 == 0)
     {
 
         console.log(i, "BUZZ");
     }
 
-    if (i % 3 == 0)
+    elseif (i % 3 == 0)
     {
         console.log(i, "FIZZ");
     }
 
-    ++;
+    x++;
 
 }
 
@@ -128,8 +122,16 @@ for (let i = 1; i <= n; i++)
     console.log(`Found ${i}`);
     break;
     }
-    console.log(`Did not find ${value}, the random value`)
+    if (value < 1 || value > n) 
+    {
+
+        console.log(`Did not find value: ${value}`);
+      
+    } 
+    
 }
+
+
 
 
 // Exercise 5 Section
@@ -144,18 +146,26 @@ console.log(start, n1)
 
 for (let i = start; i <= n1; i++)
 {
-    if (i % fizzDivisor == 0)
+    if (i % fizzDivisor == 0 && i % buzzDivisor == 0) 
+    {
+    
+        console.log(i, "FIZZBUZZ");
+        
+    } 
+    else if (i % fizzDivisor == 0)
     {
         
         console.log(i, "FIZZ");
     }
             
             
-    if (i % buzzDivisor == 0)
+    else if (i % buzzDivisor == 0)
     {
     
         console.log(i, "BUZZ");
     }
+
+   
 }      
         
 console.log(fizzDivisor, buzzDivisor);
