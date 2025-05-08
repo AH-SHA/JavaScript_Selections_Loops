@@ -28,14 +28,16 @@ for(let i = 0; i < 100; i++)
     {
         console.log(i, "FIZZBUZZ");
     }
-    else if (i % 5 == 0)    
-    {
-        console.log(i, "BUZZ");
-    }
     else if (i % 3 == 0)
     {
         console.log(i, "FIZZ");
     }
+    
+    else if (i % 5 == 0)    
+    {
+        console.log(i, "BUZZ");
+    }
+    
     
 
 
@@ -80,6 +82,8 @@ while (x <= 100);
 
 let i = 1;
 
+
+
 while (i <= 100)
 {
 
@@ -91,18 +95,18 @@ while (i <= 100)
     }
 
 
-    elseif (i % 5 == 0)
+    else if (i % 5 == 0)
     {
 
         console.log(i, "BUZZ");
     }
 
-    elseif (i % 3 == 0)
+    else if (i % 3 == 0)
     {
         console.log(i, "FIZZ");
     }
 
-    x++;
+    i++; //updated the letter used for the incrementer here.
 
 }
 
