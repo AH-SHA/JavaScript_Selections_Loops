@@ -19,10 +19,13 @@ for(let i = 1; i < 100; i+=2)
     }
     */
 
+
+
+    
 // Exercise 2 Section
     console.log("EXERCISE 2:\n==========\n");
 
-for(let i = 0; i < 100; i++) 
+for(let i = 1; i < 100; i++) 
 {
     if (i % 15 == 0)
     {
@@ -47,7 +50,47 @@ for(let i = 0; i < 100; i++)
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
+// Exercise 3, exercise 1 Re-factored as a - DO-WHILE Loop
+console.log("exercise 1 - as DO-WHILE Loop:\n==========\n");
+
+let y = 1;
+
+do
+{
+
+    console.log(y);
+
+y+=2;
+
+} 
+
+while (y < 100); 
+
+
+
+
+// Exercise 3, Exercise 1 Re-Factored as a  - While LOOP
+
+console.log("exercise 1 - as While Loop:\n==========\n");
+
+
+let z = 1;
+
+while (z < 100)
+{
+    console.log(z);
+    z+= 2;
+}
+
+
+
+
+
+
 // Do-While Loop Use for FIZZBUZZ Problem
+
+
+ console.log("exercise 2 - as DO-WHILE Loop:\n==========\n");
 
 let x = 1;
 
@@ -70,7 +113,7 @@ do
     else if (x % 3 == 0)
     {
         console.log(x, "FIZZ");
-}
+    }
 
 x++;
 
@@ -79,6 +122,8 @@ while (x <= 100);
 
 
 // While Loop used for FIZZBUZZ Problem
+
+ console.log("exercise 2 - as While - Loop :\n==========\n");
 
 let i = 1;
 
@@ -126,13 +171,20 @@ for (let i = 1; i <= n; i++)
     console.log(`Found ${i}`);
     break;
     }
-    if (value < 1 || value > n) 
-    {
+    //if (value < 1 || value > n) 
+    //{
 
-        console.log(`Did not find value: ${value}`);
+        //console.log(`Did not find value: ${value}`);
       
-    } 
-    
+    //}
+      
+}
+
+if (i != n) 
+{
+
+    console.log(`Did not find value: ${value}`); 
+
 }
 
 
